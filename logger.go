@@ -29,8 +29,8 @@ func init() {
 	}()
 
 	log.SetFlags(log.Ltime)
-	initLogger := MakeLogger("logger-init").BindToDefault()
-	initLogger.Log("initializing global logger done.")
+	//initLogger := MakeLogger("logger-init").BindToDefault()
+	//initLogger.Log("initializing global logger done.")
 }
 
 // Default logger. LoggerType is for prefix, Destination is for binded channel.
