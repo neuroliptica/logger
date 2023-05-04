@@ -48,7 +48,7 @@ func MakeLogger(t string) *Logger {
 
 // Bind Logger to reading channel.
 func (l *Logger) BindToChannel(ch chan string) *Logger {
-	l.Destination = GlobalLogger
+	l.Destination = ch
 	return l
 }
 
